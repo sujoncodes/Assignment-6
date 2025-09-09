@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" href="assets/hero-leaf1.png">
+
+    <style>
+        :root{
+            --praimary-color: #15803D;
+            --secondery-color: #FACC15;
+            --soft-green: #DCFCE7;
+            --input-green: #166534;
+            --footer-color: #14532D; 
+        }
+    </style>
+
+</head>
+<body class="bg-[#F0FDF4]">
+    <header>
+        <div class="navbar bg-base-100 shadow-sm bg-[#15803D] lg:px-[90px] text-gray-50 h-[91px]">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost hover:round hover:bg-[#a5f7c4] shadow-none border-none lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 text-[#15803D]  rounded-box z-1 mt-3 w-30 p-2 shadow">
+        <li><a>About</a></li>
+        <li>
+          <a>Gallery</a>
+          
+        </li>
+        <li><a>Plant a Tree</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost hover:bg-[#15803D] border-none shadow-none hover:text-[#FACC15] text-2xl">Green Earth</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-lg">
+      <li><a>About</a></li>
+      <li>
+        <summary>Gallery</summary>
+      </li>
+      <li><a>Plant a Tree</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end hover:shadow-md">
+    <a class="btn bg-[#FACC15] text-[#15803D] border-none shadow-none rounded-[999px] px-[20px] py-[12px]">Plant a Tree</a>
+  </div>
+</div>
+    </header>
+
+    <!-- banner-section -->
+
+    <section>
+        <div class="lg:h-[383px] bg-[#DCFCE7] grid grid-cols-1 lg:grid-cols-3 px-[10px] lg:px-0">
+            <div class="flex justify-end">
+                <img src="./assets/hero-leaf1.png" alt="">
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-[40px] font-bold mb-[8px] text-center">Plant a Tree, Grow a Future</h1>
+                <p class="text-[16px] opacity-[0.8] mb-[36px] flex-wrap text-center">
+                    Join our mission to plant 1 million trees and make the Earth greener for future generations.
+                </p>
+                <div>
+                    <a class="btn bg-[#FACC15] text-[#15803D] border-none shadow-none rounded-[999px] px-[20px] py-[12px]">Get Involved</a>
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <img src="./assets/hero-leaf2.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- container-section -->
+     <main class="px-[33px] lg:px-[70px]">
+        <h1 class="text-[32px] font-semibold mt-[40px] lg:mt-[50px] text-center mb-[40px]">Choose Your Trees</h1>
+        <div class="lg:grid  lg:grid-cols-12 gap-x-[30px] mb-[50px] lg:mb-[80px]">
+            <div class="col-span-2 rounded-[16px] mb-[15px] lg:mb-0 text-center lg:text-start">
+                <h2 class="text-[20px] font-semibold mb-[16px] ">Categories</h2>
+                <div id="level-categories" class="flex lg:block flex-col items-center">
+                </div>
+            </div>
+
+<!-- ----loader----- -->
+            <div id="loader" class="flex justify-center items-center col-span-8 h-[300px] ">
+                <span class="loading loading-dots loading-lg"></span>
+            </div>
+
+
+            <div id="card-container" class="col-span-8 rounded-[16px] grid grid-cols-1 lg:grid-cols-3 gap-[12px] lg:gap-[20px] mb-[15px] lg:mb-0">
+                
+            </div>
+
+
+
+<div id="cart-container" class="bg-white col-span-2 rounded-[16px] mb-[8px] p-[16px] flex flex-col h-[500px]">
+  <h1 class="text-[20px] font-semibold mb-2">Your Cart</h1>
+
+  <div id="cart-history" class="flex-1 overflow-y-auto">
+  </div>
+
+  <div id="cart-footer" class="hidden mt-4 flex justify-between border-t-2 border-gray-300 pt-[8px]">
+    <h3 class="text-[16px] font-medium text-black">Total:</h3>
+    <p class="text-[16px] font-medium text-black">
+      ৳ <span id="cart-total">0</span>
+    </p>
+  </div>
+</div>
+
+
+
+            </div>
+        </div>
+     </main>
+
+     <!-- About-section -->
+
+ 
+
+     <script src="script/index.js"></script>
+    
+</body>
+</html>
