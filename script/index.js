@@ -92,7 +92,7 @@ const displayPlant = (plants) => {
         <dialog id="${modalId}" class="modal">
           <div class="modal-box">
             <h3 class="text-xl font-bold mb-[8px]">${plant.name}</h3>
-            <img class="h-[226px] w-full object-cover rounded-[8px]" src="${plant.image}" alt="">
+            <img class="h-[150px] lg:h-[226px] w-full object-cover rounded-[8px]" src="${plant.image}" alt="">
             <h3 class="text-[18px] font-semibold my-[13px]">
               Category: <span class="font-normal">${plant.category}</span>
             </h3>
